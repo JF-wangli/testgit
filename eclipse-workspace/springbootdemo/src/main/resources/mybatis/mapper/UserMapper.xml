@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.UserMapper" >
+    <!-- <resultMap id="BaseResultMap" type="springbootdemo.bean.User" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="username" jdbcType="VARCHAR" />
+        <result column="age" property="age" jdbcType="INTEGER" />
+        <result column="eamil" property="email" jdbcType="VARCHAR"/>
+    </resultMap> -->
+
+    <select id="getAllUsers" resultType="com.demo.bean.TH_USER"  >
+        SELECT
+        count(*)
+        FROM SG_SYS_PORTAL_APP_RANK
+    </select>
+
+</mapper>
